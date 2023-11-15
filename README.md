@@ -1,6 +1,6 @@
 # MuSe2023-Personalisation Challenge
 
-This is the source code for paper
+This is the source code for the paper
 
 [Temporal-aware Multimodal Feature Fusion for Sentiment Analysis.](https://doi.org/10.1145/3606039.3613111) </br>
 Qi Li, Shulei Tang, Feixiang Zhang, Ruotong Wang, Yangyang Xu, Zhuoer Zhao, Xiao Sun, Meng Wang </br>
@@ -14,8 +14,8 @@ This code is based on Python3.8 and Pytorch 1.12. Other packages in `requirement
 
 ## Features
 
-For the official multimodal features, please refer to [official support](https://www.muse-challenge.org/challenge/data). An extended of the visiual features (VPT, APViT EmoNet, MVFace, EAC), we extract those features by employing the pre-trained models released by themselves. 
-The detail feature extractor for VPT refering to [this link](https://github.com/KMnP/vpt), APViT refering to [this link](https://github.com/youqingxiaozhua/APViT), EAC refering to [this link](https://github.com/zyh-uaiaaaa/Erasing-Attention-Consistency), MVFace refering to [this link](https://github.com/xiaoboCASIA/SV-X-Softmax), EmoNet refering to [this link](https://github.com/face-analysis/emonet).
+For the official multimodal features, please refer to [official support](https://www.muse-challenge.org/challenge/data). An extended of the visual features (VPT, APViT EmoNet, MVFace, EAC), we extract those features by employing the pre-trained models released by themselves. 
+The detail feature extractor for VPT refers to [this link](https://github.com/KMnP/vpt), APViT referring to [this link](https://github.com/youqingxiaozhua/APViT), EAC referring to [this link](https://github.com/zyh-uaiaaaa/Erasing-Attention-Consistency), MVFace referring to [this link](https://github.com/xiaoboCASIA/SV-X-Softmax), EmoNet referring to [this link](https://github.com/face-analysis/emonet).
 Please put the extracted features in the same directory as the official features.
 
 ## Training
@@ -186,7 +186,7 @@ For unimodal training, the following shows some of the parameter settings and co
    python main_earlyfusion.py --task personalisation --feature egemaps affectnet7 --emo_dim physio-arousal --model_dim 256 --rnn_n_layers 1 --lr 0.0005  --win_len 200 --hop_len 100 --rnn_dropout 0.5
    ```
 
-3. Using `late_fusion_feature_select.vis.py` for visulization，`fusion_a.py` and `fusion_v.py` for averaging the fusion results.
+3. Using `late_fusion_feature_select.vis.py` for visualization， `fusion_a.py` and `fusion_v.py` for averaging the fusion results.
 
 ## Contact
 If you have any problems or any further interesting ideas with this project, feel free to contact me (tangshulei120@gmail.com or liqi@stu.ahu.edu.cn).
